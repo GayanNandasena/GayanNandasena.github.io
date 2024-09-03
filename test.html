@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    
+    <div class="navbar fixed flex flex-row-reverse gap-8 mr-8 px-8 text-center justify-around h-20 text-lg bg-black text-white w-[10%]" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+        <a href="">ABOUT</a>
+        <a href="">EXPERTISE</a>
+        <a href="">PORTFOLIO</a>    
+        <a href="">CONTACT ME</a>
+    </div>
+    
+    <div class=" flex w-[90%] justify-between h-screen ">
+
+        <div class="hero-section  flex-none flex flex-col justify-center items-end text-white w-screen bg-yellow-400 h-full" >
+            <h1 class=" text-5xl font-bold tracking-widest">GAYAN NANDASENA</h1>
+            <h2 class=" text-2xl tracking-widest mt-1">3D ARTIST | WEB DEVELOPER</h2>
+            <p class=" text-xs tracking-widest mt-4">From code to creation, crafting digital experiences that inspire.</p>
+        </div>
+
+    
+        <div class="about-me flex-none text-center px-48 bg-red-500 w-screen" >
+            <h1 class="text-4xl">ABOUT ME</h1><br>
+            <p class="">I am passionate about blending technology with creativity. Alongside my studies, I am an aspiring 3D artist, specializing in product modeling and architectural visualization using Blender and 3ds Max.<br>
+               <br>My technical expertise in software engineering is complemented by my creative pursuits in 3D art, allowing me to approach problems with a unique perspective. I am dedicated to continuous learning and look forward to expanding my skill set further through both academic and practical experiences.<br>
+               <br>I am always open to connecting with fellow professionals, sharing knowledge, and exploring new opportunities in both software engineering and 3D art.
+            </p>
+        </div>
+    
+    </div>
+
+    <script>
+        document.addEventListener('wheel', function(event) {
+            if (event.deltaY !== 0) {
+                // Directly update the scroll position for faster response
+                window.scrollBy(event.deltaY, 0);
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script>
+</body>
+</html>
