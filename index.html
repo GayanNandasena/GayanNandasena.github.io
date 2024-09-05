@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- loading-page -->
-<div id="loading-page" class="loader-overlay fixed top-0 left-0 w-[100%] h-[100%] bg-black flex items-center justify-center z-[9999]">
-    <div class="loader relative flex items-center justify-center"></div>
-</div>
+<body class="flex bg-black bg-[url('')] bg-cover lg:bg-center bg-fixed h-screen overflow-x-scroll">
 
-<body class="flex bg-black bg-[url('')] bg-cover lg:bg-center bg-fixed">
+    <!-- loading-page -->
+    <div id="loading-page" class="loader-overlay fixed top-0 left-0 w-[100%] h-[100%] bg-black flex items-center justify-center z-[9999]">
+        <div class="loader relative flex items-center justify-center"></div>
+    </div>
 
     <!-- landing-page -->
-    <section class="home text-white h-screen w-screen flex flex-none justify-between">
+    <section class="home text-white flex flex-none justify-between h-screen w-screen snap-start">
         
         <div class="navbar flex fixed justify-around h-screen px-2 md:px-10 tracking-widest backdrop-blur-lg z-50" style="writing-mode: vertical-rl; transform: rotate(180deg);">
             <a class="hover:text-blue-200 duration-500" href="">SERVICES</a>
@@ -107,12 +107,12 @@
     </section>
     
     <!-- Service Section -->
-    <section class="text-white h-screen w-screen flex-none">
+    <section class="text-white flex-none h-screen w-screen snap-start">
         <h1 class="text-center md:text-5xl mt-4">SERVICES</h1>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="text-white md:pl-[10%] md:pr-[10%] h-screen flex flex-none justify-around items-center">
+    <section class="text-white md:pl-[10%] md:pr-[20%] flex flex-none justify-around items-center h-screen snap-start w-fit">
         <div class="md:mr-[5%]">
             <h1 class="md:text-8xl text-transparent" style="-webkit-text-stroke: 1px #fff">PORTFOLIO</h1><br>
             <p class="text-2xl text-slate-300">
@@ -167,8 +167,19 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="flex-none bg-blue-600 w-screen h-screen snap-start">
+        <div class="">
+
+        </div>
+    </section>
+
+
 
     
+
+
+
 
     <script>
         // JavaScript to handle the loading page
@@ -176,18 +187,9 @@
             setTimeout(function () {
                 document.getElementById("loading-page").style.display = "none";
                 document.getElementById("main-content").style.visibility = "visible";
-            }, 1000); // seconds delay
+            }, 5000); // seconds delay
         });
     </script>
 
-
-    <script>
-        document.addEventListener('wheel', function(event) {
-            if (event.deltaY !== 0) {
-                window.scrollBy(event.deltaY, 0);
-                event.preventDefault();
-            }
-        }, { passive: false });
-    </script>
 </body>
 </html>
